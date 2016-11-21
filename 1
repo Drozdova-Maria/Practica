@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{	
+	char sex;
+	int mass;
+	float index, height_v_m, Height;
+	printf("Enter your sex:\n");
+	scanf("%s",&sex);
+	printf("Enter your height:\n");
+	scanf("%f",&Height);
+	printf("Enter your mass:\n");
+	scanf("%d",&mass);
+	height_v_m=Height/100.;
+	index=mass/(height_v_m*height_v_m);
+		if(index<18.){
+		printf("getting fat! \n");
+	}
+	else if(index>=25.){
+		printf("grow thin!\n");
+	}
+		else {
+			printf("Norma\n");
+		}
+	
+	return 0;
+}
+
+
