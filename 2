@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int time, hour,second, minute;
+	printf("What time is now?(hour:minute:second)\n");
+	scanf("%d:%d:%d",&hour,&minute,&second);
+	if(hour>=25&&minute>=61&&second>=61){
+		printf("Error!");
+	}
+	else{
+	
+	if (hour>=00&&hour<=5){
+		printf("Good night");
+	}
+		else if(hour>=6&&hour<=11){
+			printf("Good morning");
+		}
+		else if(hour>=18&&hour<=23) {
+			printf("Good evening");
+		}
+		else {
+			printf("Good afternoon");
+		}
+	}
+		return 0;
+}
