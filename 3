@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159265
+int main()
+{
+	float size,size1;
+	char x;
+	printf("Enter (D/R):\n");
+	scanf("%f%c",&size,&x);
+	printf("%.2f%c\n",size,x);
+	if(x=='D'){
+		size1=(size*PI)/180;
+		printf("size of radians =%f",size1);
+	}
+	else if(x=='R'){
+		size1=(size*180)/PI;
+		printf("size of degree=%f",size1);
+	}
+	return 0;
+
+}
