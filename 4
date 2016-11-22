@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int foot,inch;
+	float Height;
+	printf("Enter Height(foot, inch):\n");
+	scanf("%d",&foot);
+	scanf("%d",&inch);
+	if(foot!=(inch/12)){
+		printf("Error!");
+	}
+	else{
+		Height=inch*2.54;
+	printf("Height in cm=%.1f",Height);
+}
+	return 0;
+}
