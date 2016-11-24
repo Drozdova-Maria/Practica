@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<cstdlib>
+#include <ctime>
+int main()
+{
+	int Guess;
+	srand(time(NULL));
+	int secret_number= rand()%100+1;
+	do{
+		printf("Guess the number\n");
+		scanf("%d",&Guess);
+		if(secret_number>Guess){
+			printf("Number >\n");
+	}
+		else if(secret_number<Guess){
+			printf("Number <\n");
+		}
+	}
+	while(secret_number!=Guess);
+	printf("True!");
+	return 0;
+	
+}
