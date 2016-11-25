@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int H,t=0;
+	const float g=9.81; 
+	float h, L;
+	printf("Enter H:\n");
+	scanf("%d",&H);
+	while (H>0)
+	{
+		L=g*t*t/2;
+		h=H-L;
+		if(h>0){
+			printf("t=%.2d c h=%.1f",t,h);
+			t++;
+		}
+	}
+	printf("The END");
+	return 0;
+}
